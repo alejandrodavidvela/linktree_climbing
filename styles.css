@@ -1,0 +1,151 @@
+body {
+	font-family: 'Oswald', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f7f7f7;
+    text-transform: uppercase;
+}
+.background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('background2.jpg');
+	background-size: cover;
+	filter: blur(5px);
+	z-index: -1;
+    overflow: hidden;
+  
+}
+.background::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change the opacity as needed */
+    z-index: 1;
+}
+
+.container {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+   
+}
+
+.profile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.profile img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin-bottom: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+.profile h1 {
+	font-size: 35px;
+	margin: 0;
+    color: #fff;
+    
+}
+
+.links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.bubble-link {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #0069ff;
+	border-radius: 30px;
+	width: 80%;
+	height: 60px;
+	margin: 10px;
+	color: #fff;
+	font-size: 12px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+    border: 2px solid #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+}
+
+.bubble-link:hover {
+	transform: scale(1.1);
+}
+
+.bubble-link .icon {
+	font-size: 20px;
+
+}
+
+.calendly-badge-content {
+    border: 2px solid #fff;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7) !important;
+    font-family: 'Oswald', sans-serif !important;
+    font-size: 20px !important;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+   
+  }
+  
+  .social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7) !important;
+    text-decoration: none;
+    
+  }
+  
+  .social-icons a:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .social-icons i {
+    
+    font-size: 20px;
+  }
+  
+  .fa-facebook-f{
+    color: #4267B2;
+  }
+  .fa-twitter{
+    color: #1DA1F2;
+  }
+  .fa-instagram{
+    color: #E1306C;
+  }
+  .fa-youtube{
+    color: #FF0000;
+  }
